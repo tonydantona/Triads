@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_stringset" />
 
     <TextView
-        android:id="@+id/text_quality"
+        android:id="@+id/text_chord"
         android:layout_width="0dp"
         android:layout_height="154dp"
         android:layout_marginStart="64dp"
@@ -56,7 +56,7 @@
 
         android:background="@drawable/my_border"
         android:gravity="center"
-        android:text="Quality"
+        android:text="Chord"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
 
@@ -78,6 +78,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_quality" />
+        app:layout_constraintTop_toBottomOf="@+id/text_chord" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
