@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
@@ -21,12 +22,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         mTextKey = findViewById(R.id.text_key);
         mTextStringSet = findViewById(R.id.text_stringset);
         mTextChord = findViewById(R.id.text_chord);
 
+        initializeNextButton();
+
         randomlySetTextViews();
+    }
+
+    private void initializeNextButton() {
+        Button btnNext = findViewById(R.id.btn_next);
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                randomlySetTextViews();
+            }
+        });
     }
 
     public void randomlySetTextViews() {
